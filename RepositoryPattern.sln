@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.SQL", "Repo.Impls\Repo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.Framework", "Repo.Framework\Repo.Framework.csproj", "{678DC533-C107-42C3-8C1F-6BB1015AEED8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repo.Elastic", "Repo.Elastic\Repo.Elastic.csproj", "{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{678DC533-C107-42C3-8C1F-6BB1015AEED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678DC533-C107-42C3-8C1F-6BB1015AEED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678DC533-C107-42C3-8C1F-6BB1015AEED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{86A7AC92-3182-42F1-85CD-0092E4675344} = {2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}
 		{3304531F-EB03-45BD-AB29-D11E4CEFB47D} = {2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}
+		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2} = {2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19CF2D26-C777-4B26-A753-32A291BC9777}

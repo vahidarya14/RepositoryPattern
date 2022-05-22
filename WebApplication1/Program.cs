@@ -15,6 +15,10 @@ else if (DataBaseType == "mongoDb")
 {
     Repo.MongoDb.StartUp.ConfigureServices(builder.Services);
 }
+else if (DataBaseType == "elastic")
+{
+    Repo.Elastic.StartUp.ConfigureServices(builder.Services);
+}
 else
     throw new Exception("valid DataBaseType => sql or mongoDb");
 

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Repo.Elastic\Repo.Elastic.csproj" />
     <ProjectReference Include="..\Repo.Framework\Repo.Framework.csproj" />
     <ProjectReference Include="..\Repo.Impls\Repo.MongoDb\Repo.MongoDb.csproj" />
     <ProjectReference Include="..\Repo.Impls\Repo.SQL\Repo.SQL.csproj" />

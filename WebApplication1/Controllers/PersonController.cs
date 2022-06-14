@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using _2_DomainEntities;
+using _4_UnitOfWork;
+using Microsoft.AspNetCore.Mvc;
 using Repo.Framework;
 
 namespace WebApplication1.Controllers
@@ -7,24 +9,24 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-        IRepository<PersonEntity> _repository;
+        IDbUnitOfWork _unitOfWork;
 
-        public PersonController(IRepository<PersonEntity> repository)
+        public PersonController( IDbUnitOfWork unitOfWork)
         {
-            _repository = repository;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public async Task<List<PersonEntity>> Get()
         {
-            return _repository.GetItems();
+            return _unitOfWork.People.GetItems();
         }
 
 
         [HttpPost]
         public async Task<PersonEntity> Post(PersonDto value)
         {
-            return await _repository.InsertAsync(new PersonEntity(value.FirstName, value.LastName));
+            return await _unitOfWork.People.InsertAsync(new PersonEntity(value.FirstName, value.LastName));
         }
 
 
@@ -34,7 +36,7 @@ namespace WebApplication1.Controllers
             if (id != value.Id)
                 throw new Exception();
 
-            return await _repository.UpdateAsync(new PersonEntity(value.FirstName, value.LastName) { Id = value.Id });
+            return await _unitOfWork.People.UpdateAsync(new PersonEntity(value.FirstName, value.LastName) { Id = value.Id });
         }
     }
 }

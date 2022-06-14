@@ -1,4 +1,5 @@
-﻿using Nest;
+﻿using _2_DomainEntities;
+using Nest;
 using Repo.Framework;
 
 namespace Repo.Elastic

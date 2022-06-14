@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using _2_DomainEntities;
+using Microsoft.EntityFrameworkCore;
 using Repo.Framework;
 
 namespace Repo.SQL

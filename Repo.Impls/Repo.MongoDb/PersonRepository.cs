@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using _2_DomainEntities;
+using MongoDB.Driver;
 using Repo.Framework;
 
 namespace Repo.MongoDb

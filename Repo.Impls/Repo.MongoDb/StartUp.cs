@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using _2_DomainEntities;
+using _4_UnitOfWork;
+using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
 using Repo.Framework;
 
@@ -8,7 +10,7 @@ namespace Repo.MongoDb
     {
         public static void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<IDbUnitOfWork, UnitOfWork>();
             services.AddScoped<IRepository<PersonEntity>, PersonRepository>();
 
             services.AddSingleton(x =>

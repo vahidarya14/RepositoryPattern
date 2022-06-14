@@ -2,6 +2,8 @@
 using Nest;
 using Microsoft.Extensions.DependencyInjection;
 using Repo.Framework;
+using _2_DomainEntities;
+using _4_UnitOfWork;
 
 namespace Repo.Elastic
 {
@@ -9,6 +11,7 @@ namespace Repo.Elastic
     {
         public static void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IDbUnitOfWork, UnitOfWork>();
 
             services.AddScoped<Framework.IRepository<PersonEntity>, PersonRepository>();
 

@@ -5,15 +5,19 @@ VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{6425489A-C103-4B3B-96BF-8C63AC15236C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo.Impls", "Repo.Impls", "{2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Repo.Impls", "3-Repo.Impls", "{2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.MongoDb", "Repo.Impls\Repo.MongoDb\Repo.MongoDb.csproj", "{86A7AC92-3182-42F1-85CD-0092E4675344}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.SQL", "Repo.Impls\Repo.SQL\Repo.SQL.csproj", "{3304531F-EB03-45BD-AB29-D11E4CEFB47D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.Framework", "Repo.Framework\Repo.Framework.csproj", "{678DC533-C107-42C3-8C1F-6BB1015AEED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Repo.Framework", "Repo.Framework\1-Repo.Framework.csproj", "{678DC533-C107-42C3-8C1F-6BB1015AEED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repo.Elastic", "Repo.Elastic\Repo.Elastic.csproj", "{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.Elastic", "Repo.Elastic\Repo.Elastic.csproj", "{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-DomainEntities", "2-DomainEntities\2-DomainEntities.csproj", "{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-UnitOfWork", "4-UnitOfWork\4-UnitOfWork.csproj", "{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,14 @@ Global
 		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4FB3EC1-31FD-4360-A082-FB4F040D38D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

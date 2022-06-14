@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Repo.Framework;
+using _2_DomainEntities;
+using _4_UnitOfWork;
 
 namespace Repo.SQL
 {
@@ -8,6 +10,7 @@ namespace Repo.SQL
     {
         public static void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IDbUnitOfWork, UnitOfWork>();
 
             services.AddScoped<IRepository<PersonEntity>, PersonRepository>();
 

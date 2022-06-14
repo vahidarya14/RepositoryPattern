@@ -4,8 +4,6 @@ using Repo.Framework;
 
 namespace Repo.SQL
 {
-   
-
     public class UnitOfWork : IDbUnitOfWork
     {
         AppDbContext _database;
@@ -17,8 +15,9 @@ namespace Repo.SQL
 
         public IRepository<PersonEntity> People { get; private set; }
 
-        public Task<int> SavechangesAsync() => _database.SaveChangesAsync();
 
+
+        public Task<int> SaveChangesAsync(CancellationToken ct) => _database.SaveChangesAsync(ct);
     }
 
 }

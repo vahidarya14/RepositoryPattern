@@ -4,6 +4,6 @@ namespace Repo.Framework
 {
     public interface IUnitOfWork
     {
-        Task<int> SavechangesAsync();
+        Task<int> SaveChangesAsync( CancellationToken ct);
     }
 }

@@ -21,7 +21,7 @@ namespace Repo.SQL
         {
             p.Id = Guid.NewGuid();
             await _dbContext.People.AddAsync(p, cancellationToken);
-            await _dbContext.SaveChangesAsync(cancellationToken);
+            //await _dbContext.SaveChangesAsync(cancellationToken);
             return p;
         }
 
@@ -32,7 +32,7 @@ namespace Repo.SQL
             p.FirstName = model.FirstName;
             p.LastName = model.LastName;
             _dbContext.People.Update(p);
-            await _dbContext.SaveChangesAsync(cancellationToken);
+            //await _dbContext.SaveChangesAsync(cancellationToken);
             return p;
         }
 
@@ -40,9 +40,9 @@ namespace Repo.SQL
         {
             var p = await _dbContext.People.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
             _dbContext.People.Remove(p);
-            var res = await _dbContext.SaveChangesAsync(cancellationToken);
+            //var res = await _dbContext.SaveChangesAsync(cancellationToken);
 
-            return res > 1;
+            return true;
         }
 
 

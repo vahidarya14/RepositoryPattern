@@ -13,7 +13,7 @@ namespace Repo.Elastic
 
         public IRepository<PersonEntity> People { get; private set; }
 
-        public Task<int> SavechangesAsync() => Task.FromResult(1);
+        public Task<int> SaveChangesAsync(CancellationToken ct) => Task.FromResult(1);
 
     }
 

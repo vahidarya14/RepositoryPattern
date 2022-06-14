@@ -24,19 +24,25 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        public async Task<PersonEntity> Post(PersonDto value)
+        public async Task<PersonEntity> Post(PersonDto value, CancellationToken ct)
         {
-            return await _unitOfWork.People.InsertAsync(new PersonEntity(value.FirstName, value.LastName));
+            var res= await _unitOfWork.People.InsertAsync(new PersonEntity(value.FirstName, value.LastName));
+            await _unitOfWork.SaveChangesAsync(ct);
+            return res;
         }
 
 
+
         [HttpPut("{id}")]
-        public async Task<PersonEntity> Update(Guid id, PersonEntity value)
+        public async Task<PersonEntity> Update(Guid id, PersonEntity value, CancellationToken ct)
         {
             if (id != value.Id)
                 throw new Exception();
 
-            return await _unitOfWork.People.UpdateAsync(new PersonEntity(value.FirstName, value.LastName) { Id = value.Id });
+            var res =await _unitOfWork.People.UpdateAsync(new PersonEntity(value.FirstName, value.LastName) 
+                                                        { Id = value.Id });
+            await _unitOfWork.SaveChangesAsync(ct);
+            return res;
         }
     }
 }

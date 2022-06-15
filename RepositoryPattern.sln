@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{6425489A-C103-4B3B-96BF-8C63AC15236C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Repo.Impls", "3-Repo.Impls", "{2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Repo.Impls", "4-Repo.Impls", "{2B8C3D5F-A11A-40EA-B678-FF9C20D1320C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.MongoDb", "Repo.Impls\Repo.MongoDb\Repo.MongoDb.csproj", "{86A7AC92-3182-42F1-85CD-0092E4675344}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repo.Elastic", "Repo.Elasti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-DomainEntities", "2-DomainEntities\2-DomainEntities.csproj", "{AE20995D-0A18-4E96-9A64-B0A585E2DA7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-UnitOfWork", "4-UnitOfWork\4-UnitOfWork.csproj", "{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-UnitOfWork", "4-UnitOfWork\3-UnitOfWork.csproj", "{A30D015D-9DFB-4CB4-B555-3E6AE40BCD0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

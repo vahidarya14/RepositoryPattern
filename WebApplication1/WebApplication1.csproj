@@ -13,8 +13,8 @@
   <ItemGroup>
     <ProjectReference Include="..\2-DomainEntities\2-DomainEntities.csproj" />
     <ProjectReference Include="..\4-UnitOfWork\3-UnitOfWork.csproj" />
-    <ProjectReference Include="..\Repo.Elastic\Repo.Elastic.csproj" />
     <ProjectReference Include="..\Repo.Framework\1-Repo.Framework.csproj" />
+    <ProjectReference Include="..\Repo.Impls\Repo.Elastic\Repo.Elastic.csproj" />
     <ProjectReference Include="..\Repo.Impls\Repo.MongoDb\Repo.MongoDb.csproj" />
     <ProjectReference Include="..\Repo.Impls\Repo.SQL\Repo.SQL.csproj" />
   </ItemGroup>

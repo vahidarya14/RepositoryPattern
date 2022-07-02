@@ -11,7 +11,6 @@ namespace Repo.SQL
         public static void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IDbUnitOfWork, UnitOfWork>();
-
             services.AddScoped<IRepository<PersonEntity>, PersonRepository>();
 
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("_MyDb"));

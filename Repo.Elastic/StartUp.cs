@@ -1,7 +1,6 @@
 ﻿using Elasticsearch.Net;
 using Nest;
 using Microsoft.Extensions.DependencyInjection;
-using Repo.Framework;
 using _2_DomainEntities;
 using _4_UnitOfWork;
 
@@ -12,7 +11,6 @@ namespace Repo.Elastic
         public static void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IDbUnitOfWork, UnitOfWork>();
-
             services.AddScoped<Framework.IRepository<PersonEntity>, PersonRepository>();
 
             var pool = new SingleNodeConnectionPool(new Uri("http://localhost:9200"));
